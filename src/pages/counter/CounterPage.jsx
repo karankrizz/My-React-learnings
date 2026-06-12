@@ -1,26 +1,59 @@
-import { useSelector,useDispatch } from "react-redux"
-import {add,sub} from "./counter.slice"
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
-export default  function CounterPage(){
+import { addItem, removeItem } from "./counter.slice";
 
-    const count = useSelector((state)=> state?.counter?.counts)
-    const disPatch = useDispatch()
-return <div>
-    <h2>Counter page </h2>
-    <div className="countTheValue">
-        <h2>
-            count:{count}
-        </h2>
-        <button onClick={()=>disPatch(add())}>
-            ADD
-        </button>
-                <button onClick={()=>disPatch(sub())}>
-            SUB
-        </button>
-    </div>
+export default function CounterPage() {
 
+    const [text, setText] = useState("");
 
-</div>
+    const dispatch = useDispatch();
 
-    
+    const items = useSelector(
+        (state) => state.todo.items
+    );
+
+    return (
+        <div>
+
+            <h2>Todo App</h2>
+
+            <input
+                type="text"
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+                placeholder="Enter something"
+            />
+
+            <button
+                onClick={() => {
+                    dispatch(addItem(text));
+                    setText("");
+                }}
+            >
+                Add
+            </button>
+
+            <hr />
+
+            {
+                items.map((item, index) => (
+                    <div key={index}>
+
+                        <span>{item}</span>
+
+                        <button
+                            onClick={() =>
+                                dispatch(removeItem(index))
+                            }
+                        >
+                            Remove
+                        </button>
+
+                    </div>
+                ))
+            }
+
+        </div>
+    );
 }

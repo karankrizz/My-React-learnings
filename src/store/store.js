@@ -1,11 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import countAdd from '../pages/counter/counter.slice'
+import todoReducer from "../pages/counter/counter.slice";
 
-
-export const store =configureStore(
-    {
-        reducer:{
-            counter: countAdd
-        }
+export const store = configureStore({
+    reducer: {
+        todo: todoReducer
     }
-)
+});

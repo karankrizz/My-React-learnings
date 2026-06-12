@@ -1,23 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const counterSlice = createSlice(
-    {
-        name:"count-the-number-app",
+export const counterSlice = createSlice({
+    name: "todo-app",
 
-        initialState:{
-            count : 0,
-            counts: 1,
+    initialState: {
+        items: []
+    },
+
+    reducers: {
+        addItem: (state, action) => {
+            state.items.push(action.payload);
         },
-        reducers:{
-            add:(state,action)=>{
-                state.counts +=1
-            },
-            sub:(state,action)=>{
-                state.counts -=1
-            }
+
+        removeItem: (state, action) => {
+            state.items.splice(action.payload, 1);
         }
     }
+});
 
-)
-export const {add,sub}=counterSlice.actions
-export default counterSlice.reducer
+export const { addItem, removeItem } = counterSlice.actions;
+
+export default counterSlice.reducer;
