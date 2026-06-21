@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Homepage from './pages/Homepage';
-
+import State from './pages/basic_props/State';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Homepage/>
+    <State/>
   </React.StrictMode>
 );
 
