@@ -15,7 +15,8 @@ export default function Homepage() {
     color: "green",
   };
   const status = () => {
-    console.log("Details submitted ");
+    console.log("submit button is clicked")
+    console.log("Details submitted ")
   };
   return (
     <div>
