@@ -1,35 +1,29 @@
+import React, { useState } from "react";
 export default function Homepage() {
-  const details = ["kirubha", "25", "Msc mathematics"];
-  const workingStatus = false;
-  const headingStyle = {
-    color: "red",
-    backgroundColor: "black",
-    width: 150,
-  };
-  const noStyle = {
-    color: "red",
-  };
-  const yesStyle = {
-    color: "green",
-  };
+  const [canditateName, setcanditateName] = useState("kirubhakaran");
+  const [skills, setskills] = useState([
+    "Html",
+    "Css",
+    "Javascript",
+    "Bootstrap",
+    "React",
+  ]);
+  const [details, setdetails] = useState({
+    name: "snow",
+    species: "dog",
+    Age: 4,
+  });
   return (
     <div>
-      <h1 style={headingStyle}>About Me</h1>
-
-      {details.map((value, index) => (
-        <p key={index}>
-          <strong> {value}</strong>
-        </p>
-      ))}
-      
-      <p>
-        Currently working:{" "}
-        {workingStatus ? (
-          <strong style={yesStyle}>Yes</strong>
-        ) : (
-          <strong style={noStyle}>NO</strong>
-        )}
-      </p>
+      <h1>Hi this is {canditateName}</h1>
+      <div>
+        <p>Skills :</p>
+        {skills.map((value,index)=><p key={index}>{value}</p>)}
+      </div>
+      <h2>My Pet Details</h2>
+      <p>NAME : {details.name.toLocaleUpperCase()} </p>
+      <p>SPECIES :{details.species.toLocaleUpperCase()}</p>
+      <p>AGE :{details.Age}</p>
     </div>
   );
 }
