@@ -1,5 +1,6 @@
 export default function Homepage() {
-  const details = ["kirubha", "25", "Msc mathematics"];
+  const details = ["kirubhakaran", "25", "Msc mathematics","R"];
+  const [name, age, degree,initial] = details;
   const workingStatus = false;
   const headingStyle = {
     color: "red",
@@ -16,10 +17,12 @@ export default function Homepage() {
     <div>
       <h1 style={headingStyle}>About Me</h1>
 
-    <p>Name : {k</p>
-      
+      <p><strong>NAME : </strong>{name.toUpperCase()+' '+initial}</p>
+      <p><strong>AGE : </strong>{age}</p>
+      <p><strong>DEGREE : </strong>{degree.toUpperCase()}</p>
+
       <p>
-        Currently working:{" "}
+       <strong> Currently working:{" "}</strong>
         {workingStatus ? (
           <strong style={yesStyle}>Yes</strong>
         ) : (
