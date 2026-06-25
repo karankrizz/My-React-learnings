@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Updatestate from './pages/updatecomponent/Updatestate';
+import Countincreaser from './pages/countIncreaser/Countincreaser';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Updatestate/>
+    <Countincreaser/>
   </React.StrictMode>
 );
 
