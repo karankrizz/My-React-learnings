@@ -25,11 +25,11 @@ export default class HomePage extends React.Component {
         <p>
           <strong>Skills :</strong>{" "}
           {this.state.skills[0] +
-            " , " +
+            ", " +
             this.state.skills[1] +
-            " , " +
+            ", " +
             this.state.skills[2] +
-            " , " +
+            ", " +
             this.state.skills[3] +
             "."}
         </p>
