@@ -11,6 +11,8 @@ export default function CustomerList(props) {
       <p>
         <strong>Qualification :</strong> {props?.customerQualification}{" "}
       </p>
+      <h2><u>Customers</u></h2>
+      {props?.customers.map((value,index)=><p key={index}>{value?.customerName}-{value?.Age}</p>)}
     </div>
   );
 }
