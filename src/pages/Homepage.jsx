@@ -16,11 +16,7 @@ export default function Homepage() {
     <div>
       <h1 style={headingStyle}>About Me</h1>
 
-      {details.map((value, index) => (
-        <p key={index}>
-          <strong> {value}</strong>
-        </p>
-      ))}
+    <p>Name : {k</p>
       
       <p>
         Currently working:{" "}
