@@ -34,8 +34,8 @@ export default function Homepage() {
         {degree.toUpperCase()}
       </p>
       <div>
-        Skills:{skills.map((value,index)=><p key={index}>{value}</p>) }
- 
+        <p> skills: {skills + ""}</p>
+        {/* Skills:{skills.map((value,index)=><p key={index}>{value}</p>) } */}
       </div>
 
       <p>
