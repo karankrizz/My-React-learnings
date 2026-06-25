@@ -14,11 +14,11 @@ export default function Updatestate() {
   }
   return (
     <div>
-      <p>Student Name : {name}</p>
-      <p>Student Age :{age}</p>
-      <button onClick={changeName}>Change Name</button>
-      <button onClick={changeAge}>Change Age</button>
       <button onClick={changeTotaly}>Change totally</button>
+      <p>Student Name : {name}</p>
+      <button onClick={changeName}>Change Name</button>
+      <p>Student Age :{age}</p>
+      <button onClick={changeAge}>Change Age</button>
 
     </div>
   );
