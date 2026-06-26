@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Homepage from './pages/Homepage';
+import UncontrolledForm from './pages/UncontrolledForm';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Homepage/>
+    <UncontrolledForm/>
   </React.StrictMode>
 );
 
