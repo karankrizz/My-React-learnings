@@ -1,0 +1,29 @@
+[
+  {
+    "fieldLabel": "USERNAME",
+    "fieldType": "text",
+    "fieldName": "username",
+    "fieldId": "username",
+    "fieldClass": "",
+    "fieldEnable": true,
+    "fieldDefaultValue": ""
+  },
+  {
+    "fieldLabel": "PASSWORD",
+    "fieldType": "password",
+    "fieldName": "password",
+    "fieldId": "password",
+    "fieldClass": "",
+    "fieldEnable": true,
+    "fieldDefaultValue": ""
+  },  {
+    "fieldLabel": "",
+    "fieldType": "submit",
+    "fieldName": "login",
+    "fieldId": "login",
+    "fieldClass": "",
+    "fieldEnable": true,
+    "fieldDefaultValue": ""
+  }
+
+]

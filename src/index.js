@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import UncontrolledForm from './pages/UncontrolledForm';
-
+import Jsonform1 from './pages/Jsonform1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UncontrolledForm/>
+    <Jsonform1/>
   </React.StrictMode>
 );
 
