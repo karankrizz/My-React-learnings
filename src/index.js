@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Homepage from './pages/Homepage';
-
+import Loginworkout from './pages/Loginworkout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Homepage/>
+    <Loginworkout name="Kirubhakaran" />
   </React.StrictMode>
 );
 
