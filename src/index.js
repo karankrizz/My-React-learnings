@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Homepage from './pages/Homepage';
+import Themepage from './pages/Themepage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Homepage/>
+    <Themepage/>
   </React.StrictMode>
 );
 
